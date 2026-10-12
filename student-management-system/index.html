@@ -1,89 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Student Management System</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body{background:#f5f7fb;color:#1f2937;font-family:Arial,sans-serif}
-    .navbar{box-shadow:0 2px 10px rgba(0,0,0,.08)}
-    .hero{padding:90px 20px;background:linear-gradient(135deg,#0d6efd,#6f42c1);color:#fff}
-    .hero h1{font-weight:700}
-    .card{border:0;border-radius:16px;box-shadow:0 6px 20px rgba(0,0,0,.08);height:100%}
-    .icon{font-size:40px}
-    .section{padding:70px 0}
-    footer{background:#111827;color:#fff;padding:25px 0}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Student Management System</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+body{font-family:Arial,sans-serif;color:#182033;background:#f8f9ff}.navbar{background:#0b132b}.navbar .nav-link{color:#dbe3ff}.navbar .nav-link:hover{color:#fff}.hero{padding:90px 0;background:linear-gradient(120deg,#0b132b,#38277d);color:#fff}.gradient-text{color:#a9b7ff}.hero-btn{background:#fff;color:#2d216e;border-radius:50px;padding:12px 25px;font-weight:700}.hero-visual{min-height:330px;border-radius:28px;background:linear-gradient(145deg,#6f42c1,#0d6efd);display:flex;align-items:center;justify-content:center;font-size:120px;box-shadow:0 25px 60px rgba(0,0,0,.22)}.stats-strip{background:#fff;box-shadow:0 5px 25px rgba(20,30,60,.06)}.stat{padding:25px;text-align:center;border-right:1px solid #eee}.stat strong,.stat span{display:block}.stat strong{font-size:1.25rem}.stat span{color:#6b7280;margin-top:5px}.section-space{padding:80px 0}.section-label{color:#6247dd;text-transform:uppercase;font-weight:800;letter-spacing:1px;font-size:.8rem}.section-title{font-weight:800}.section-subtitle{color:#6b7280;max-width:700px;margin:auto}.feature-box,.detail-card,.contact-card,.record-card{background:#fff;border-radius:20px;padding:28px;box-shadow:0 10px 30px rgba(20,30,60,.08);height:100%}.feature-box{transition:.25s}.feature-box:hover{transform:translateY(-7px)}.feature-icon{font-size:45px;margin-bottom:15px}.about-panel{background:linear-gradient(145deg,#0b132b,#38277d);color:#fff;border-radius:28px;padding:45px;min-height:300px;display:flex;align-items:center;justify-content:center;font-size:100px}.detail-card strong,.detail-card span{display:block}.detail-card span{color:#6b7280;margin-top:7px}.code-box{background:#111827;color:#dbeafe;border-radius:20px;padding:30px;font-family:monospace}.project-box{background:linear-gradient(120deg,#0b132b,#38277d);color:#fff;border-radius:28px;padding:65px 25px}.btn-custom{background:#6247dd;color:#fff;border:0;border-radius:50px;padding:12px 25px;font-weight:700}.btn-custom:hover{background:#4e36c4;color:#fff}footer{background:#0b132b;color:#fff;padding:28px 0}
+</style>
 </head>
 <body>
-
-<nav class="navbar navbar-expand-lg bg-white sticky-top">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="#home">🎓 Student Management System</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">☰</button>
-    <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#technology">Technology</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<section id="home" class="hero text-center">
-  <div class="container">
-    <h1 class="display-4">Student Management System</h1>
-    <p class="lead mt-3">A simple C language based project for managing student records efficiently.</p>
-    <a href="#features" class="btn btn-light btn-lg mt-3">Explore Project</a>
-  </div>
-</section>
-
-<section id="features" class="section">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="fw-bold">Project Features</h2>
-      <p class="text-muted">Main functions included in the C project.</p>
-    </div>
-    <div class="row g-4">
-      <div class="col-md-4"><div class="card p-4 text-center"><div class="icon">➕</div><h4 class="mt-3">Add Student</h4><p>Enter roll number, name, course and marks to create a student record.</p></div></div>
-      <div class="col-md-4"><div class="card p-4 text-center"><div class="icon">📋</div><h4 class="mt-3">Display Records</h4><p>View all saved student records in an organized format.</p></div></div>
-      <div class="col-md-4"><div class="card p-4 text-center"><div class="icon">🔎</div><h4 class="mt-3">Search Student</h4><p>Find a student quickly using their roll number.</p></div></div>
-    </div>
-  </div>
-</section>
-
-<section id="about" class="section bg-white">
-  <div class="container">
-    <div class="row align-items-center g-4">
-      <div class="col-lg-7">
-        <h2 class="fw-bold">About the Project</h2>
-        <p class="mt-3">Student Management System is a beginner-friendly console application developed in C language. It demonstrates practical use of structures, arrays, functions, loops and conditional statements.</p>
-        <p>The project is useful for understanding how basic student data can be stored, displayed and searched through a menu-driven program.</p>
-      </div>
-      <div class="col-lg-5"><div class="card p-4"><h4>Student Data</h4><hr><p>✔ Roll Number</p><p>✔ Student Name</p><p>✔ Course</p><p>✔ Marks</p></div></div>
-    </div>
-  </div>
-</section>
-
-<section id="technology" class="section">
-  <div class="container text-center">
-    <h2 class="fw-bold mb-4">Technology Used</h2>
-    <div class="row justify-content-center g-4">
-      <div class="col-md-3"><div class="card p-4"><h4>C Language</h4><p class="mb-0">Core programming</p></div></div>
-      <div class="col-md-3"><div class="card p-4"><h4>Structures</h4><p class="mb-0">Student records</p></div></div>
-      <div class="col-md-3"><div class="card p-4"><h4>Functions</h4><p class="mb-0">Modular code</p></div></div>
-    </div>
-    <a class="btn btn-primary mt-5" href="../projects/Student_Management_System_C/student_management.c">View C Source Code</a>
-  </div>
-</section>
-
-<footer class="text-center">
-  <div class="container"><p class="mb-0">© 2026 Student Management System | C Language Project</p></div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<nav class="navbar navbar-dark"><div class="container py-2"><a class="navbar-brand fw-bold" href="#home">🎓 Student Management System</a><div class="navbar-nav ms-auto flex-row flex-wrap justify-content-end"><a class="nav-link px-2" href="#home">Home</a><a class="nav-link px-2" href="#features">Features</a><a class="nav-link px-2" href="#about">About</a><a class="nav-link px-2" href="#technology">Technology</a><a class="nav-link px-2" href="#contact">Contact</a></div></div></nav>
+<header id="home" class="hero"><div class="container"><div class="row align-items-center g-5"><div class="col-lg-7"><p class="section-label mb-2" style="color:#c5ccff">C LANGUAGE PROJECT</p><h1 class="display-4 fw-bold mb-4">Student <span class="gradient-text">Management System.</span></h1><p class="lead mb-4">A simple and practical C language project designed to add, display and search student records through a menu-driven system.</p><a href="#features" class="btn hero-btn">Explore Project →</a></div><div class="col-lg-5"><div class="hero-visual">🎓</div></div></div></div></header>
+<section class="stats-strip"><div class="container"><div class="row g-0"><div class="col-6 col-lg-3 stat"><strong>Add</strong><span>Student Records</span></div><div class="col-6 col-lg-3 stat"><strong>Display</strong><span>All Records</span></div><div class="col-6 col-lg-3 stat"><strong>Search</strong><span>By Roll Number</span></div><div class="col-6 col-lg-3 stat"><strong>C</strong><span>Programming Language</span></div></div></div></section>
+<section id="features" class="section-space"><div class="container"><div class="text-center mb-5"><p class="section-label mb-2">Project Features</p><h2 class="section-title display-6">Manage Student Records</h2><p class="section-subtitle">The project demonstrates the basic operations required for a simple student record management system.</p></div><div class="row g-4"><div class="col-md-4"><div class="feature-box text-center"><div class="feature-icon">➕</div><h3>Add Student</h3><p class="text-secondary">Enter roll number, name, course and marks to create a student record.</p></div></div><div class="col-md-4"><div class="feature-box text-center"><div class="feature-icon">📋</div><h3>Display Records</h3><p class="text-secondary">View all available student records in an organized console format.</p></div></div><div class="col-md-4"><div class="feature-box text-center"><div class="feature-icon">🔎</div><h3>Search Student</h3><p class="text-secondary">Find a student quickly by entering the student's roll number.</p></div></div></div></div></section>
+<section id="about" class="section-space bg-white"><div class="container"><div class="row align-items-center g-5"><div class="col-lg-5"><div class="about-panel">💻</div></div><div class="col-lg-7"><p class="section-label mb-2">About The Project</p><h2 class="section-title display-6 mb-3">A Practical C Language Project</h2><p class="text-secondary">Student Management System is a beginner-friendly console application created to practice fundamental C programming concepts. It provides a simple menu-driven approach for managing student information.</p><div class="row g-3 mt-3"><div class="col-6"><div class="detail-card"><strong>Project</strong><span>Student Management</span></div></div><div class="col-6"><div class="detail-card"><strong>Language</strong><span>C Programming</span></div></div><div class="col-6"><div class="detail-card"><strong>Concepts</strong><span>Structures & Arrays</span></div></div><div class="col-6"><div class="detail-card"><strong>Functions</strong><span>Modular Programming</span></div></div></div></div></div></div></section>
+<section id="technology" class="section-space"><div class="container"><div class="text-center mb-5"><p class="section-label mb-2">Technology Used</p><h2 class="section-title display-6">Built With C Programming</h2></div><div class="row g-4"><div class="col-md-4"><div class="record-card text-center"><div class="feature-icon">C</div><h3>C Language</h3><p class="text-secondary mb-0">Core programming language used to build the console application.</p></div></div><div class="col-md-4"><div class="record-card text-center"><div class="feature-icon">🧩</div><h3>Structures</h3><p class="text-secondary mb-0">Used to organize student information into records.</p></div></div><div class="col-md-4"><div class="record-card text-center"><div class="feature-icon">⚙️</div><h3>Functions</h3><p class="text-secondary mb-0">Used to keep add, display and search operations modular.</p></div></div></div><div class="row justify-content-center mt-5"><div class="col-lg-9"><div class="code-box"><div class="mb-3">Student Record</div><div>Roll Number : 101</div><div>Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Student Name</div><div>Course&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: BCA</div><div>Marks&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 85</div></div></div></div><div class="text-center mt-5"><a class="btn btn-custom" href="../projects/Student_Management_System_C/student_management.c">View C Source Code →</a></div></div></section>
+<section class="section-space"><div class="container"><div class="project-box text-center"><p class="text-uppercase fw-bold mb-2">Student Management System</p><h2 class="display-6 fw-bold mb-3">Simple. Practical. Student Friendly.</h2><p class="mx-auto mb-4" style="max-width:760px">This project is created for learning core C programming concepts and understanding how a basic student record system works.</p><a href="#contact" class="btn btn-light rounded-pill px-4 py-2 fw-bold">Project Contact</a></div></div></section>
+<section id="contact" class="section-space pt-0"><div class="container"><div class="contact-card text-center mx-auto" style="max-width:900px"><p class="section-label mb-2">Contact</p><h2 class="section-title display-6 mb-3">Project Information</h2><p class="text-secondary mb-4">For questions or information about this Student Management System project.</p><a class="btn btn-custom" href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=bhartirawat9829@gmail.com&su=Student%20Management%20System%20Project%20Enquiry" target="_blank" rel="noopener noreferrer">Open Gmail →</a></div></div></section>
+<footer><div class="container"><div class="text-center"><strong>🎓 Student Management System</strong><p class="mb-0 mt-2">C Language · Student Project · 2026</p></div></div></footer>
 </body>
 </html>
