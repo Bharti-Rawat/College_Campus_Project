@@ -10,11 +10,13 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container py-2">
-      <a class="navbar-brand fw-bold" href="#home">CampusConnect</a>
+      <a class="navbar-brand fw-bold" href="#home">🎓 Campus<span class="brand-dot">Connect</span></a>
       <div class="navbar-nav ms-auto flex-row flex-wrap justify-content-end">
         <a class="nav-link active" href="#home">Home</a>
         <a class="nav-link" href="#events">Events</a>
+        <a class="nav-link" href="#features">Features</a>
         <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#gallery">Gallery</a>
         <a class="nav-link" href="#contact">Contact</a>
       </div>
     </div>
@@ -23,85 +25,156 @@
   <header id="home" class="hero">
     <div class="container">
       <div class="row align-items-center g-5">
-        <div class="col-lg-8">
-          <span class="badge text-bg-light mb-4">Student Project · 2026</span>
-          <h1 class="fw-bold mb-4">Discover. Learn.<br>Connect on Campus.</h1>
-          <p class="lead mb-4">CampusConnect is a clean and responsive college event platform where students can discover workshops, seminars and campus activities in one place.</p>
-          <a href="#events" class="btn btn-light hero-btn">Explore Events</a>
+        <div class="col-lg-7">
+          <span class="hero-badge mb-4">✨ Student Project · 2026</span>
+          <h1 class="fw-bold mb-4">Discover. Learn.<br><span class="gradient-text">Connect on Campus.</span></h1>
+          <p class="lead mb-4">CampusConnect brings college events, workshops, seminars and student activities together in one beautiful place.</p>
+          <a href="#events" class="btn hero-btn">Explore Events →</a>
         </div>
-        <div class="col-lg-4">
-          <div class="hero-card">
-            <div class="profile-mark">BR</div>
-            <h3 class="fw-bold">Built by Bharti Rawat</h3>
-            <p class="mb-0">BCA 3rd Year Student<br>HTML · CSS · Bootstrap</p>
-          </div>
+        <div class="col-lg-5">
+          <div class="hero-image"></div>
         </div>
       </div>
     </div>
   </header>
 
+  <section class="stats-strip">
+    <div class="container">
+      <div class="row g-0">
+        <div class="col-6 col-lg-3 stat"><strong>50+</strong><span>Events & Activities</span></div>
+        <div class="col-6 col-lg-3 stat"><strong>1000+</strong><span>Student Participants</span></div>
+        <div class="col-6 col-lg-3 stat"><strong>20+</strong><span>College Partners</span></div>
+        <div class="col-6 col-lg-3 stat"><strong>100%</strong><span>Student Focused</span></div>
+      </div>
+    </div>
+  </section>
+
   <section id="events" class="section-space">
     <div class="container">
       <div class="text-center mb-5">
-        <p class="text-primary fw-bold mb-2">WHAT'S HAPPENING</p>
-        <h2 class="section-title display-6">Upcoming Events</h2>
-        <p class="section-subtitle">Explore learning opportunities and activities designed to make campus life more engaging.</p>
+        <p class="section-label mb-2">Featured events</p>
+        <h2 class="section-title display-6">What's happening on campus?</h2>
+        <p class="section-subtitle">Find exciting opportunities to learn new skills, meet people and show your talent.</p>
       </div>
       <div class="row g-4">
         <div class="col-md-4">
           <article class="event-card">
-            <div class="event-icon">01</div>
-            <span class="badge text-bg-primary mt-4">Workshop</span>
-            <h3>Web Development Workshop</h3>
-            <p class="text-secondary">Learn the fundamentals of responsive web design and build modern layouts with Bootstrap.</p>
-            <p class="event-date mb-0">15 November · Computer Lab</p>
+            <div class="event-photo photo-1"></div>
+            <div class="event-body">
+              <span class="event-tag">Workshop</span>
+              <h3>Web Development Workshop</h3>
+              <p class="text-secondary">Build responsive websites and learn practical HTML, CSS and Bootstrap skills.</p>
+              <p class="event-date mb-0">📅 15 November · 💻 Computer Lab</p>
+            </div>
           </article>
         </div>
         <div class="col-md-4">
           <article class="event-card">
-            <div class="event-icon">02</div>
-            <span class="badge text-bg-success mt-4">Seminar</span>
-            <h3>Career Guidance Seminar</h3>
-            <p class="text-secondary">Explore career paths, interview preparation and the professional skills students need.</p>
-            <p class="event-date mb-0">22 November · Seminar Hall</p>
+            <div class="event-photo photo-2"></div>
+            <div class="event-body">
+              <span class="event-tag">Seminar</span>
+              <h3>Career Guidance Seminar</h3>
+              <p class="text-secondary">Discover career paths, interview tips and the skills needed for your future.</p>
+              <p class="event-date mb-0">📅 22 November · 🎤 Seminar Hall</p>
+            </div>
           </article>
         </div>
         <div class="col-md-4">
           <article class="event-card">
-            <div class="event-icon">03</div>
-            <span class="badge text-bg-warning mt-4">Activity</span>
-            <h3>Student Tech Fest</h3>
-            <p class="text-secondary">A creative campus activity for students who enjoy technology, ideas and teamwork.</p>
-            <p class="event-date mb-0">30 November · College Campus</p>
+            <div class="event-photo photo-3"></div>
+            <div class="event-body">
+              <span class="event-tag">Competition</span>
+              <h3>Student Tech Fest</h3>
+              <p class="text-secondary">A fun technology event where students can compete, create and collaborate.</p>
+              <p class="event-date mb-0">📅 30 November · 🏫 College Campus</p>
+            </div>
           </article>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="about" class="section-space bg-white">
+  <section id="features" class="section-space bg-white">
+    <div class="container">
+      <div class="text-center mb-5">
+        <p class="section-label mb-2">Why CampusConnect?</p>
+        <h2 class="section-title display-6">Everything students need</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3"><div class="feature-box"><div class="feature-icon">📅</div><h3>Find Events</h3><p class="text-secondary mb-0">Discover workshops, seminars, competitions and activities.</p></div></div>
+        <div class="col-md-6 col-lg-3"><div class="feature-box"><div class="feature-icon">🤝</div><h3>Build Connections</h3><p class="text-secondary mb-0">Meet students with similar interests and grow your network.</p></div></div>
+        <div class="col-md-6 col-lg-3"><div class="feature-box"><div class="feature-icon">🏆</div><h3>Show Your Talent</h3><p class="text-secondary mb-0">Participate in competitions and showcase your skills.</p></div></div>
+        <div class="col-md-6 col-lg-3"><div class="feature-box"><div class="feature-icon">💡</div><h3>Learn & Grow</h3><p class="text-secondary mb-0">Join learning sessions that turn ideas into practical skills.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section-space">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6"><div class="about-image"></div></div>
+        <div class="col-lg-6 about-copy">
+          <p class="section-label mb-2">About the project</p>
+          <h2 class="section-title display-6 mb-3">Made from scratch for a college portfolio</h2>
+          <p class="text-secondary">CampusConnect is a front-end student project created by Bharti Rawat. It demonstrates semantic HTML, responsive Bootstrap layouts and custom CSS styling without JavaScript or PHP.</p>
+          <div class="row g-3 mt-3">
+            <div class="col-6"><div class="detail-card"><strong>HTML</strong><span>Semantic structure</span></div></div>
+            <div class="col-6"><div class="detail-card"><strong>CSS</strong><span>Custom modern design</span></div></div>
+            <div class="col-6"><div class="detail-card"><strong>Bootstrap</strong><span>Responsive layout</span></div></div>
+            <div class="col-6"><div class="detail-card"><strong>100%</strong><span>No JavaScript/PHP</span></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="section-space bg-white">
+    <div class="container">
+      <div class="text-center mb-5">
+        <p class="section-label mb-2">Campus moments</p>
+        <h2 class="section-title display-6">Learn. Connect. Participate.</h2>
+        <p class="section-subtitle">A visual glimpse of the energy behind college events and student life.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6"><div class="gallery-item gallery-1"></div></div>
+        <div class="col-md-6"><div class="gallery-item gallery-2"></div></div>
+        <div class="col-md-6"><div class="gallery-item gallery-3"></div></div>
+        <div class="col-md-6"><div class="gallery-item gallery-4"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-space">
     <div class="container">
       <div class="project-box text-center">
-        <p class="text-uppercase fw-bold mb-2">About the project</p>
-        <h2 class="display-6 fw-bold mb-3">Made from scratch for a college portfolio</h2>
-        <p class="mx-auto mb-0" style="max-width:760px">CampusConnect is a front-end student project created by Bharti Rawat. It demonstrates semantic HTML, responsive Bootstrap layouts and custom CSS styling without JavaScript or PHP.</p>
+        <p class="text-uppercase fw-bold mb-2">Built by Bharti Rawat</p>
+        <h2 class="display-6 fw-bold mb-3">A simple idea with a professional web experience.</h2>
+        <p class="mx-auto mb-4" style="max-width:760px">CampusConnect is designed as a clean, responsive student project that brings campus activities into one easy-to-explore interface.</p>
+        <a href="#contact" class="btn btn-light rounded-pill px-4 py-2 fw-bold">Get in Touch</a>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="section-space">
+  <section id="contact" class="section-space pt-0">
     <div class="container">
-      <div class="contact-card text-center mx-auto" style="max-width:850px">
-        <p class="text-primary fw-bold mb-2">CONTACT</p>
+      <div class="contact-card text-center mx-auto" style="max-width:900px">
+        <p class="section-label mb-2">Contact</p>
         <h2 class="section-title display-6 mb-3">Have an event idea?</h2>
-        <p class="text-secondary mb-4">Get in touch with the student developer and share your idea for a college activity.</p>
-        <a class="btn btn-primary-custom" href="mailto:bhartirawat9829@gmail.com">Email Bharti</a>
+        <p class="text-secondary mb-4">Share your idea for a college activity or connect with the student developer.</p>
+        <a class="btn btn-primary-custom" href="mailto:bhartirawat9829@gmail.com">Email Bharti →</a>
       </div>
     </div>
   </section>
 
-  <footer class="text-center">
-    <div class="container"><small>© 2026 <strong>CampusConnect</strong> · Student Project by Bharti Rawat</small></div>
+  <footer>
+    <div class="container">
+      <div class="row g-4 align-items-start">
+        <div class="col-md-6"><div class="footer-brand fw-bold">🎓 Campus<span class="brand-dot">Connect</span></div><p class="mb-0 mt-2">Connect · Participate · Grow</p></div>
+        <div class="col-md-6 text-md-end"><strong>Student Project by Bharti Rawat</strong><p class="mb-0 mt-2">BCA 3rd Year · HTML · CSS · Bootstrap</p></div>
+      </div>
+      <hr class="border-secondary my-4">
+      <div class="text-center"><small>© 2026 CampusConnect. All rights reserved.</small></div>
+    </div>
   </footer>
 </body>
 </html>
